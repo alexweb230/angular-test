@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
   :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;
@@ -14,6 +14,22 @@
   <li *ngFor="let item of list  | search:sear">
     {{item.name}}
   </li>
-</ul>
+</ul> -->
 
-<router-outlet></router-outlet>  
+<div class="container">
+
+  <label>data label</label>
+  <input type="text" class="form-control" (input)="onInput($event)">
+
+  <button class="btn btn-primary">Primary</button>
+
+</div>
+
+<div class="container">
+  <p>{{serverData}}</p>
+</div>
+
+
+
+
+<router-outlet></router-outlet>

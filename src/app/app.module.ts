@@ -5,13 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import {FormsModule} from '@angular/forms';
-import { SearchPipe } from './search.pipe';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchPipe,
     
   ],
   imports: [
