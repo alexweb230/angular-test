@@ -12,9 +12,15 @@ export class AppComponent {
 
   serverData = '';
 
+  serverCreate: boolean = false;
+
 
   onInput(event:Event){
     this.serverData = (<HTMLInputElement>event.target).value; 
   }
- 
+  
+  onServer(){
+    this.serverCreate = true;
+  }
+
 }

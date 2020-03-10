@@ -21,14 +21,21 @@
   <label>data label</label>
   <input type="text" class="form-control" (input)="onInput($event)">
 
-  <button class="btn btn-primary">Primary</button>
+  <button class="btn btn-primary" (click)="onServer()">Primary</button>
 
 </div>
 
 <div class="container">
-  <p>{{serverData}}</p>
+  <p *ngIf="serverCreate; else noServer">{{serverData}}</p>
+
+  <ng-template #noServer>
+     <p>now server</p>
+  </ng-template>
 </div>
 
+<div class="container">
+  <app-server></app-server>
+</div>
 
 
 
